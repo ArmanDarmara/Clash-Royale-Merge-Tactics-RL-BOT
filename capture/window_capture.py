@@ -1,0 +1,53 @@
+"""
+Locate and screenshot the "iPhone Mirroring" window on macOS.
+
+Must be run in a real Terminal.app process (Screen Recording permission
+granted to Terminal), NOT through Cowork's device shell.
+
+Usage: python3 window_capture.py [out_path]
+  e.g. python3 window_capture.py ../data/calib_deploy_phase.png
+"""
+import sys
+import subprocess
+import Quartz
+
+
+def find_window(app_name="iPhone Mirroring"):
+    """Return the CGWindow info dict for the iPhone Mirroring window, or None."""
+    options = Quartz.kCGWindowListOptionOnScreenOnly | Quartz.kCGWindowListExcludeDesktopElements
+    windows = Quartz.CGWindowListCopyWindowInfo(options, Quartz.kCGNullWindowID)
+    for w in windows:
+        if w.get("kCGWindowOwnerName") == app_name:
+            return w
+    return None
+
+
+def window_bounds(app_name="iPhone Mirroring"):
+    """Return (x, y, width, height) of the window in screen coordinates, or None."""
+    w = find_window(app_name)
+    if not w:
+        return None
+    b = w["kCGWindowBounds"]
+    return (int(b["X"]), int(b["Y"]), int(b["Width"]), int(b["Height"]))
+
+
+def screenshot_window(out_path="../data/test_capture.png", app_name="iPhone Mirroring"):
+    """Capture just the iPhone Mirroring window to out_path using the window's CGWindowID.
+    Works even if the window is not frontmost, as long as it's on-screen (not minimized)."""
+    w = find_window(app_name)
+    if not w:
+        raise RuntimeError(f"{app_name} window not found — is it open?")
+    window_id = w["kCGWindowNumber"]
+    subprocess.run(
+        ["/usr/sbin/screencapture", "-l", str(window_id), "-o", "-x", out_path],
+        check=True,
+    )
+    return out_path
+
+
+if __name__ == "__main__":
+    out_path = sys.argv[1] if len(sys.argv) > 1 else "../data/test_capture.png"
+    b = window_bounds()
+    print("Window bounds (x, y, w, h):", b)
+    path = screenshot_window(out_path=out_path)
+    print("Saved:", path)
