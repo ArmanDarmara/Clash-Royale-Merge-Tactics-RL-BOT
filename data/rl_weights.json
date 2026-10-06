@@ -1,0 +1,118 @@
+{
+  "weights": {
+    "bias": 0.0,
+    "is_buy": 0.0,
+    "is_sell": 0.0,
+    "is_noop": 0.0,
+    "cost": 0.0,
+    "gold_before": 0.0,
+    "gold_after": 0.0,
+    "is_merge_buy": 0.0,
+    "bench_used_before": 0.0,
+    "bench_room_after": 0.0,
+    "round_num": 0.0,
+    "star_level": 0.0,
+    "trait_committed": 0.0
+  },
+  "episodes_trained": 14,
+  "history": [
+    {
+      "run": "run_20260921_210502",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_154.png",
+      "steps": 67
+    },
+    {
+      "run": "run_20260921_213608",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_075.png",
+      "steps": 32
+    },
+    {
+      "run": "run_20260922_004211",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_012.png",
+      "steps": 6
+    },
+    {
+      "run": "run_20260922_005003",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_116.png",
+      "steps": 42
+    },
+    {
+      "run": "run_20260922_005339",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_072.png",
+      "steps": 29
+    },
+    {
+      "run": "run_20260922_011223",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_098.png",
+      "steps": 43
+    },
+    {
+      "run": "run_20260922_011526",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_065.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_011731",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_070.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_011944",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_072.png",
+      "steps": 25
+    },
+    {
+      "run": "run_20260922_013004",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_071.png",
+      "steps": 29
+    },
+    {
+      "run": "run_20260922_013222",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_065.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_014559",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_101.png",
+      "steps": 42
+    },
+    {
+      "run": "run_20260922_014911",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_067.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_015429",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_065.png",
+      "steps": 28
+    }
+  ]
+}

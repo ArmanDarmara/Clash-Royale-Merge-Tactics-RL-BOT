@@ -1,0 +1,118 @@
+{
+  "weights": {
+    "bias": -1.9984014443252823e-16,
+    "is_buy": -38.643345820164114,
+    "is_sell": 0.1751278670314446,
+    "is_noop": 38.46821795313265,
+    "cost": -11.72341388797356,
+    "gold_before": 1.3322676295501876e-16,
+    "gold_after": 11.723413887973559,
+    "is_merge_buy": -4.399999994588155,
+    "bench_used_before": -8.881784197001253e-17,
+    "bench_room_after": 38.81847368719555,
+    "round_num": -8.881784197001248e-17,
+    "star_level": 0.1751278670314446,
+    "trait_committed": 0.0
+  },
+  "episodes_trained": 14,
+  "history": [
+    {
+      "run": "run_20260921_210502",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_154.png",
+      "steps": 67
+    },
+    {
+      "run": "run_20260921_213608",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_075.png",
+      "steps": 32
+    },
+    {
+      "run": "run_20260922_004211",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_012.png",
+      "steps": 6
+    },
+    {
+      "run": "run_20260922_005003",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_116.png",
+      "steps": 42
+    },
+    {
+      "run": "run_20260922_005339",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_072.png",
+      "steps": 29
+    },
+    {
+      "run": "run_20260922_011223",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_098.png",
+      "steps": 43
+    },
+    {
+      "run": "run_20260922_011526",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_065.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_011731",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_070.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_011944",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_072.png",
+      "steps": 25
+    },
+    {
+      "run": "run_20260922_013004",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_071.png",
+      "steps": 29
+    },
+    {
+      "run": "run_20260922_013222",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_065.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_014559",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_101.png",
+      "steps": 42
+    },
+    {
+      "run": "run_20260922_014911",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_067.png",
+      "steps": 30
+    },
+    {
+      "run": "run_20260922_015429",
+      "placement": 4,
+      "reward": -2.0,
+      "placement_frame": "frame_065.png",
+      "steps": 28
+    }
+  ]
+}
