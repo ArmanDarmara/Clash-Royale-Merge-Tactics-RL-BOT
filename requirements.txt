@@ -1,0 +1,6 @@
+opencv-python
+numpy
+Pillow
+pyautogui
+pyobjc-framework-Quartz
+pytesseract  # OCR for gold/round/timer text -- also needs `brew install tesseract`
